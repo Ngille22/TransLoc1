@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.transloc.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.example.transloc.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.transloc.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_baseline_add"
+        android:name="com.example.transloc.ui.addtrans.AddtransFragment"
+        android:label="Add Transformer"
+        tools:layout="@layout/fragment_add_transformer"/>
+    <fragment
+        android:id="@+id/account"
+        android:name="com.example.transloc.ui.account.AccountFragment"
+        android:label="Account"
+        tools:layout="@layout/accout"/>
+    <fragment
+        android:id="@+id/nav_list"
+        android:name="com.example.transloc.ui.transformers.TransformersFragment"
+        android:label="Transformers"
+        tools:layout="@layout/transformers"/>
+</navigation>
